@@ -1,0 +1,22 @@
+# ─── Built outputs ───────────────────────────────
+*.apk
+*.ap_
+captures/
+.externalNativeBuild/
+
+# ─── Gradle & IDE stuff ─────────────────────────
+.gradle/
+build/
+local.properties
+
+# ─── Signing keys ────────────────────────────────
+*.jks
+*.keystore
+
+# ─── IntelliJ / Android Studio ───────────────────
+.idea/
+*.iml
+
+# ─── OS junk ─────────────────────────────────────
+.DS_Store
+Thumbs.db

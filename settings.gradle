@@ -1,0 +1,13 @@
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    plugins{
+        id "org.jetbrains.kotlin.android" version "1.9.10"
+    }
+}
+
+rootProject.name = "SubaControl"
+include(":app")

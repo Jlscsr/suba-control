@@ -1,0 +1,27 @@
+# ─── Node.js deps & logs ─────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ─── Env vars ────────────────────────────────────
+.env
+
+# ─── Build outputs ───────────────────────────────
+dist/
+build/
+
+# ─── CMake / native module ───────────────────────
+hooks/mousehook/build/
+hooks/mousehook/CMakeFiles/
+**/*.o
+**/*.obj
+**/*.exe
+**/*.dll
+**/*.lib
+
+# ─── Editor / OS junk ────────────────────────────
+.vscode/
+*.log
+.DS_Store
+Thumbs.db

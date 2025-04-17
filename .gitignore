@@ -1,0 +1,28 @@
+# ─── OS junk ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Editor / IDE ────────────────────────────────
+.vscode/
+.idea/
+*.iml
+
+# ─── Env/Local secrets ────────────────────────────────
+*.env
+/local.properties
+
+# ─── Gradle caches & outputs ────────────────────
+.gradle/
+**/build/
+
+# ─── Native / C++ build (hooks) ────────────────
+**/CMakeFiles/
+**/mousehook/build/
+**/*.o
+**/*.obj
+**/*.exe
+**/*.dll
+**/*.lib
+
+# ─── Logs & misc ────────────────────────────────
+*.log
