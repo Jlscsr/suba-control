@@ -77,6 +77,7 @@ No deep tech explanation here. Just pure brainrot + fandom love = branding gold 
 
 - 🔁 Mouse movement captured from laptop and sent to Android via WebSocket
 - 🔍 Screen dimension scaling (laptop ↔ phone)
+- 👆 Tap events sent from mouse clicks (touch simulation)
 - 🧠 Native C++ hook for low-level mouse event capture
 - 🧼 Modularized Kotlin Android app with clear package separation:
   - `overlay`, `websocket`, `accessibility`, `util`
@@ -85,9 +86,9 @@ No deep tech explanation here. Just pure brainrot + fandom love = branding gold 
 
 ## 🐞 Known Issues / Quirks
 
-- 🖱️ Cursor positioning sometimes gets offset due to screen aspect ratio mismatch
+- 📍 Tap registration has a **position mismatch** — mouse click lands on the wrong UI element due to scaling/calibration issues
 - 🐢 Some latency spikes under unstable Wi-Fi
-- 🫥 No touch interaction _yet_ (we’re cooking it)
+- 🫥 No gesture support _yet_ (pinch, swipe, scroll, etc.)
 - 🧩 Native module needs further error handling and cleanup
 - 🤝 Accessibility service still rough around the edges
 
@@ -105,7 +106,7 @@ No deep tech explanation here. Just pure brainrot + fandom love = branding gold 
 ## 📌 TODO (Next Steps)
 
 - [ ] Improve input precision & scaling
-- [ ] Add tap/gesture feedback on Android overlay
+- [ ] Add drag/gesture feedback on Android overlay
 - [ ] Bi-directional communication (future plan)
 - [ ] Clean up native C++ module memory handling
 - [ ] Deploy WebSocket connection as a background service
