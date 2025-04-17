@@ -4,6 +4,19 @@
 
 ---
 
+## 📚 Table of Contents
+
+- [🧠 Origin of the Idea](#-origin-of-the-idea-aka-why-am-i-like-this)
+- [💡 Why "SubaControl"?](#-why-subacontrol-aka-whats-with-the-name)
+- [⚙️ Tech Stack](#️-tech-stack)
+- [✅ Current Features](#-current-features)
+- [🐞 Known Issues / Quirks](#-known-issues--quirks)
+- [👀 Notes](#-notes)
+- [📌 TODO (Next Steps)](#-todo-next-steps)
+- [👥 Contributors](#-contributors)
+
+---
+
 ## 🧠 Origin of the Idea (a.k.a. "Why am I like this?")
 
 So there I was—**too lazy to reach for my phone**, which was literally just chillin' beside me. All I wanted was to browse something real quick without moving my arm like it's the 1800s.
@@ -13,7 +26,7 @@ Then I thought:
 > “Wouldn't it be dope if I could just drag my mouse _off_ my laptop screen… and it pops up on my phone like magic?”
 
 I looked for apps that could do it—something like **Microsoft's Mouse Without Borders**, but for laptop-to-Android.  
-But nah, all I found were glorified remote access tools, or those clunky "mirror your phone to your PC" stuff. Bro. Why would I wanna control a copy of my phone on my laptop, when **the phone is literally right there**? 💀
+But nah, all I found were glorified remote access tools (_cough_ Anydesk _cough_), or those clunky "mirror your phone to your PC" stuff. Bro. Why would I wanna control a copy of my phone on my laptop, when **the phone is literally right there**? 💀
 
 So I had this thought:
 
