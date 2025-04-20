@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebSocket Test</title>
+  </head>
+  <body>
+    <h1>WebSocket Test</h1>
+    <div id="status">Not Connected</div>
+    <button id="connect">Connect</button>
+    <div id="log"></div>
+
+    <script>
+      document.getElementById("connect").addEventListener("click", function () {
+        const ws = new WebSocket("ws://192.168.18.120:8080");
+
+        ws.onopen = function () {
+          document.getElementById("status").textContent = "Connected!";
+          log("WebSocket connection established");
+        };
+
+        ws.onmessage = function (event) {
+          log("Message received: " + event.data);
+        };
+
+        ws.onerror = function (error) {
+          document.getElementById("status").textContent = "Error!";
+          log("WebSocket error: " + JSON.stringify(error));
+        };
+
+        ws.onclose = function () {
+          document.getElementById("status").textContent = "Closed";
+          log("WebSocket connection closed");
+        };
+      });
+
+      function log(message) {
+        const logElement = document.getElementById("log");
+        const messageElement = document.createElement("div");
+        messageElement.textContent =
+          new Date().toLocaleTimeString() + ": " + message;
+        logElement.appendChild(messageElement);
+      }
+    </script>
+  </body>
+</html>

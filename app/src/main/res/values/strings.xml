@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SubaControl</string>
+    <string name="websocket_host">192.168.18.120</string>
+</resources> 
